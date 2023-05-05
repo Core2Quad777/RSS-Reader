@@ -29,7 +29,7 @@
 #### The most important sorting function. It checks everything from discarding repetitions with <code> set </code>, to updating entries. The logic of the function is simple: lists <code> old_titles </code> and <code> old_links </code> and lists <code> latest_titles </code> and <code> latest_links </code> are re-created into sets, then the difference is found, the difference is the headers and links of the new entries. It returns 3 values: <code>title</code>, <code>link</code> and <code>text</code>, the value <code>text</code> is optional, e.g. it can be used for telegram bot replies. All values are cleans with a new run of the function, which should always be run at the same time as function <code> get_latest_articles() </code>, to avoid repetitions, delays and missing entries.
 
 ### 4. <code> clean_new() </code>
-#### It's just clean <code> latest_titles </code> and <code> latest_links </code>. Should always be run at the same time as function <code> get_latest_articles()     </code>
+#### It's just clean <code> latest_titles </code> and <code> latest_links </code>. Should always be run at the same time as function <code> get_latest_articles</code>
 
 ### 5. <code> clean_old() </code>
 #### It's just clean <code> old_titles </code> and <code> old_links </code>. Should always be run at the same time as function <code>get_old_articles()</code>. 
