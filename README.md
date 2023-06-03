@@ -38,5 +38,3 @@
 #### The Schedule block is the block of the Schedule module which sets the schedule for the functions to be performed. ####
 #### It has strict rules:
 #### 1. The function must be executed with a delay of at least 1 minute from the execution time of the function
-#### 2. Function and must be executed at the same time.
-#### 3. The function and must be executed at the same time
